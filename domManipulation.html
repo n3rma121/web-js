@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Existing content -->
+    </div>
+
+    <script>
+      // Function to add a new Element
+      function addElement() {
+        // create a new paragraph
+        var newElement = document.createElement("p");
+
+        // set the text content of the new element
+        newElement.textContent = "This is a new paragraph";
+
+        // append the new element to the container
+        document.getElementById("container").appendChild(newElement);
+      }
+      addElement();
+    </script>
+  </body>
+</html>
